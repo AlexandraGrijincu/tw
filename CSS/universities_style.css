@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 16px;
+    background: #D88BA9;
+    color: #ffffff;
+}
+
+.status {
+    opacity: .9;
+    margin: 8px 0;
+    color: #000000;
+    font-weight: bold;
+}
+
+input {
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid #000000;
+    background: #ffffff;
+    color: #000000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: .55rem;
+    border-bottom: 1px solid #D88BA9;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+td a {
+    color: #D3809E;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
