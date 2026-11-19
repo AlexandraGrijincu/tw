@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Page</title>
+    <meta http-equiv="refresh" content="5;url={% url 'login' %}"> 
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/loading_style.css' %}">
+</head>
+
+<body>
+    <div class="loading-container">
+        <img src="{% static 'MEDIA/LogoUVT.png' %}" alt="LogoUVT" class="logo">
+        <div class="loader"></div>
+    </div>
+    
+</body>
+
+</html>

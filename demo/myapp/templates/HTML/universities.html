@@ -2,10 +2,12 @@
 <html lang="ro">
 
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universități</title>
-    <link rel="stylesheet" href="../CSS/universities_style.css">
+    <link rel="stylesheet" href="{% static 'CSS/universities_style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/cursor.css' %}">
 </head>
 
 <body>
@@ -29,7 +31,8 @@
         </table>
     </div>
 
-    <script src="../JS/universities_js.js"></script>
+    <script src="{% static 'JS/universities_js.js' %}"></script>
+    <script src="{% static 'TS/cursor.js' %}"></script>
 </body>
 
 </html>

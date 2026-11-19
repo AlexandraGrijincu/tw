@@ -2,32 +2,35 @@
 <html lang="en">
 
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="../CSS/login_style.css">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="{% static 'CSS/login_style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/cursor.css' %}">
 </head>
 
 <body>
     <div class="login-container">
         <div class="login-image">
-            <img src="../MEDIA/hello.jpg" alt="Imagine login">
+            <img src="{% static 'MEDIA/hello.jpg' %}" alt="Imagine login">
         </div>
         <div class="separator"></div>
         <div class="login-form">
             <h2>Login</h2>
-            <form id="loginForm" action="home.html" method="GET">
+            <form id="loginForm" action="{% url 'home' %}" method="GET">
             <input type="email" id="email" placeholder="email">
             <input type="password" id="password" placeholder="Parola">
             <button type="submit">Login</button>
             </form>
             <p class="register-text">
-                Nu ai cont? <a href="register.html">Înregistrează-te</a>
+                Nu ai cont? <a href="{% url 'register' %}">Înregistrează-te</a>
             </p>
         </div>
     </div>
-    <script src="../JS/login_js.js"></script>
+    <script src="{% static 'JS/login_js.js' %}"></script>
+    <script src="{% static 'TS/cursor.js'}"></script>
 </body>
 
 </html>

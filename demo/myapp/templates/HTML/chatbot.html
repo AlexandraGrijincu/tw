@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
-    <link rel="stylesheet" href="../CSS/chatbotstyle.css">
+    <link rel="stylesheet" href="{% static 'CSS/chatbotstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/cursor.css' %}">
 </head>
 
 <body>
@@ -14,7 +16,8 @@
         <input type="text" id="user-input" placeholder="Scrie un mesaj...">
         <button type="submit">Trimite</button>
     </form>
-    <script src="../JS/chatbot_js.js"></script>
+    <script src="{% static 'JS/chatbot_js.js' %}"></script>
+    <script src="{% static 'TS/cursor.js' %}"></script>
 </body>
 
 </html>
